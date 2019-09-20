@@ -6,8 +6,6 @@ import nodemailer from "nodemailer";
 import sgTransport from "nodemailer-sendgrid-transport";
 import jwt from "jsonwebtoken";
 
-console.log(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
-
 
 export const generateSecret = () => {
     const randomNumber = Math.floor(Math.random()* adjectives.length);
